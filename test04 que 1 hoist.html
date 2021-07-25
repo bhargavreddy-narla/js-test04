@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hoisting</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width initial-scale=1 shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!--css styling-->
+    <style type="text/css"></style>
+    <!--javascript styling-->
+    <script type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <script type="text/javascript">
+            document.write(
+              "it is a javascript mechanism where variables and function declarations are moved to top of their scope before code execution" +
+                "<br>"
+            );
+            document.write(
+              "use cases- srtings,arrays,switch case,callback" + "<br>"
+            );
+            document.write("-----------------------------------------<br>");
+
+            var num1 = 4;
+            var num2 = 8;
+            function example() {
+              num1 = 10;
+              document.write(num1 + "<br>");
+              document.write("-----------------------------------------<br>");
+            }
+            example();
+
+            document.write(num2 + "<br>");
+            document.write("-----------------------------------------<br>");
+
+            let arr = [10, 25, 50, 3, 37, 25, 7, 15, 45];
+            document.write(arr + "<br>");
+            document.write("-----------------------------------------<br>");
+            console.log(arr);
+
+            arr.sort(function (x, y) {
+              return x - y;
+            });
+            document.write("sortedNumber:" + arr + "<br>");
+            document.write("-----------------------------------------<br>");
+          </script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
